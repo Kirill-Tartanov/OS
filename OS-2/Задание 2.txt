@@ -1,0 +1,454 @@
+Microsoft Windows [Version 10.0.18363.1256]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2019. Все права защищены.
+
+C:\Users\Xtronset>cd\
+
+C:\>md STUDN
+
+C:\>cd STUDN
+
+C:\STUDN>md ABC
+
+C:\STUDN>md TEXT
+
+C:\STUDN>cd ABC
+
+C:\STUDN\ABC>md DEF
+
+C:\STUDN\ABC>md KLMNO
+
+C:\STUDN\ABC>cd\
+
+C:\>cd STUDN
+
+C:\STUDN>cd TEXT
+
+C:\STUDN\TEXT>copy con c:\STUDN\TEXT\text1.txt
+12345. Это текст первого файла^Z
+
+^Z
+^Z^Z^Z^Z
+Скопировано файлов:         1.
+
+C:\STUDN\TEXT>copy con c:\studn\text\text2.doc
+6789. Это текст второго файла^Z
+Скопировано файлов:         1.
+
+C:\STUDN\TEXT>copy con c:\studn\text\text3.inf
+6789. Это текст третьего файла^Z
+Скопировано файлов:         1.
+
+C:\STUDN\TEXT>cd\studn
+
+C:\STUDN>cd abc
+
+C:\STUDN\ABC>cd klmno
+
+C:\STUDN\ABC\KLMNO>copy con c:\studn\abc\klmno\fyle.my
+Я все жду ветра по пути,
+Что предначертан мне судьбою,
+Но так ответа не найти,
+Как не старайся всей душою...^Z
+Скопировано файлов:         1.
+
+C:\STUDN\ABC\KLMNO>copy con c:\studn\abc\klmno\fio.txt
+Тартанов
+Кирилл Викторович^Z
+Скопировано файлов:         1.
+
+C:\STUDN\ABC\KLMNO>cd\studn
+
+C:\STUDN>copy con c:\studn\fio.txt
+Тартанов Кирилл Викторович^Z
+Скопировано файлов:         1.
+
+C:\STUDN>copy con c:\studn\inf.txt
+МКИС21, МКиМТ, 25.09.2020^Z
+Скопировано файлов:         1.
+
+C:\STUDN>dir/s
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: CCAF-94C8
+
+ Содержимое папки C:\STUDN
+
+17.12.2020  19:11    <DIR>          .
+17.12.2020  19:11    <DIR>          ..
+17.12.2020  18:59    <DIR>          ABC
+17.12.2020  19:10                26 fio.txt
+17.12.2020  19:11                25 inf.txt
+17.12.2020  19:06    <DIR>          TEXT
+               2 файлов             51 байт
+
+ Содержимое папки C:\STUDN\ABC
+
+17.12.2020  18:59    <DIR>          .
+17.12.2020  18:59    <DIR>          ..
+17.12.2020  18:58    <DIR>          DEF
+17.12.2020  19:08    <DIR>          KLMNO
+               0 файлов              0 байт
+
+ Содержимое папки C:\STUDN\ABC\DEF
+
+17.12.2020  18:58    <DIR>          .
+17.12.2020  18:58    <DIR>          ..
+               0 файлов              0 байт
+
+ Содержимое папки C:\STUDN\ABC\KLMNO
+
+17.12.2020  19:08    <DIR>          .
+17.12.2020  19:08    <DIR>          ..
+17.12.2020  19:09                28 fio.txt
+17.12.2020  19:08               112 fyle.my
+               2 файлов            140 байт
+
+ Содержимое папки C:\STUDN\TEXT
+
+17.12.2020  19:06    <DIR>          .
+17.12.2020  19:06    <DIR>          ..
+17.12.2020  19:02                40 text1.txt
+17.12.2020  19:05                29 text2.doc
+17.12.2020  19:06                30 text3.inf
+               3 файлов             99 байт
+
+     Всего файлов:
+               7 файлов            290 байт
+              14 папок  26 981 908 480 байт свободно
+
+C:\STUDN>cd text
+
+C:\STUDN\TEXT>copy c:\studn\text\text1.txt c:\studn\abc\def
+Скопировано файлов:         1.
+
+C:\STUDN\TEXT>cd\studn
+
+C:\STUDN>copy fio.txt+inf.txt myfile.inf
+fio.txt
+inf.txt
+Скопировано файлов:         1.
+
+C:\STUDN>cd abc
+
+C:\STUDN\ABC>cd klmno
+
+C:\STUDN\ABC\KLMNO>copy file.my c:\studn\abc\def\copyfyle.doc
+Не удается найти указанный файл.
+
+C:\STUDN\ABC\KLMNO>copy file.my c:\studn\abc\def\copyfile.doc
+Не удается найти указанный файл.
+
+C:\STUDN\ABC\KLMNO>copy file.my c:\studn\abc\def\
+Не удается найти указанный файл.
+
+C:\STUDN\ABC\KLMNO>copy file.my c:\studn\abc\def
+Не удается найти указанный файл.
+
+C:\STUDN\ABC\KLMNO>copy fyle.my c:\studn\abc\def\copyfile.doc
+Скопировано файлов:         1.
+
+C:\STUDN\ABC\KLMNO>cd\studn
+
+C:\STUDN>dir/s
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: CCAF-94C8
+
+ Содержимое папки C:\STUDN
+
+17.12.2020  19:13    <DIR>          .
+17.12.2020  19:13    <DIR>          ..
+17.12.2020  18:59    <DIR>          ABC
+17.12.2020  19:10                26 fio.txt
+17.12.2020  19:11                25 inf.txt
+17.12.2020  19:13                52 myfile.inf
+17.12.2020  19:06    <DIR>          TEXT
+               3 файлов            103 байт
+
+ Содержимое папки C:\STUDN\ABC
+
+17.12.2020  18:59    <DIR>          .
+17.12.2020  18:59    <DIR>          ..
+17.12.2020  19:13    <DIR>          DEF
+17.12.2020  19:08    <DIR>          KLMNO
+               0 файлов              0 байт
+
+ Содержимое папки C:\STUDN\ABC\DEF
+
+17.12.2020  19:20    <DIR>          .
+17.12.2020  19:20    <DIR>          ..
+17.12.2020  19:08               112 copyfile.doc
+17.12.2020  19:02                40 text1.txt
+               2 файлов            152 байт
+
+ Содержимое папки C:\STUDN\ABC\KLMNO
+
+17.12.2020  19:08    <DIR>          .
+17.12.2020  19:08    <DIR>          ..
+17.12.2020  19:09                28 fio.txt
+17.12.2020  19:08               112 fyle.my
+               2 файлов            140 байт
+
+ Содержимое папки C:\STUDN\TEXT
+
+17.12.2020  19:06    <DIR>          .
+17.12.2020  19:06    <DIR>          ..
+17.12.2020  19:02                40 text1.txt
+17.12.2020  19:05                29 text2.doc
+17.12.2020  19:06                30 text3.inf
+               3 файлов             99 байт
+
+     Всего файлов:
+              10 файлов            494 байт
+              14 папок  26 981 728 256 байт свободно
+
+C:\STUDN>type c:\studn\myfile.inf
+Тартанов Кирилл ВикторовичМКИС21, МКиМТ, 25.09.2020
+C:\STUDN>type c:\stund\fio.txt
+Системе не удается найти указанный путь.
+
+C:\STUDN>type c:\studn\fio.txt
+Тартанов Кирилл Викторович
+C:\STUDN>type c:\studn\inf.txt
+МКИС21, МКиМТ, 25.09.2020
+C:\STUDN>cd abc
+
+C:\STUDN\ABC>cd def
+
+C:\STUDN\ABC\DEF>type c:\studn\abc\def\text1.txt
+12345. Это текст первого файла^Z
+
+^Z
+
+C:\STUDN\ABC\DEF>cd\studn
+
+C:\STUDN>cd text
+
+C:\STUDN\TEXT>type c:\studn\text\text2.doc
+6789. Это текст второго файла
+C:\STUDN\TEXT>type c:\studn\text\text3.inf
+6789. Это текст третьего файла
+C:\STUDN\TEXT>cd\studn
+
+C:\STUDN>ren myfile.inf my.txt
+
+C:\STUDN>dir/s
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: CCAF-94C8
+
+ Содержимое папки C:\STUDN
+
+17.12.2020  19:24    <DIR>          .
+17.12.2020  19:24    <DIR>          ..
+17.12.2020  18:59    <DIR>          ABC
+17.12.2020  19:10                26 fio.txt
+17.12.2020  19:11                25 inf.txt
+17.12.2020  19:13                52 my.txt
+17.12.2020  19:06    <DIR>          TEXT
+               3 файлов            103 байт
+
+ Содержимое папки C:\STUDN\ABC
+
+17.12.2020  18:59    <DIR>          .
+17.12.2020  18:59    <DIR>          ..
+17.12.2020  19:20    <DIR>          DEF
+17.12.2020  19:08    <DIR>          KLMNO
+               0 файлов              0 байт
+
+ Содержимое папки C:\STUDN\ABC\DEF
+
+17.12.2020  19:20    <DIR>          .
+17.12.2020  19:20    <DIR>          ..
+17.12.2020  19:08               112 copyfile.doc
+17.12.2020  19:02                40 text1.txt
+               2 файлов            152 байт
+
+ Содержимое папки C:\STUDN\ABC\KLMNO
+
+17.12.2020  19:08    <DIR>          .
+17.12.2020  19:08    <DIR>          ..
+17.12.2020  19:09                28 fio.txt
+17.12.2020  19:08               112 fyle.my
+               2 файлов            140 байт
+
+ Содержимое папки C:\STUDN\TEXT
+
+17.12.2020  19:06    <DIR>          .
+17.12.2020  19:06    <DIR>          ..
+17.12.2020  19:02                40 text1.txt
+17.12.2020  19:05                29 text2.doc
+17.12.2020  19:06                30 text3.inf
+               3 файлов             99 байт
+
+     Всего файлов:
+              10 файлов            494 байт
+              14 папок  26 981 453 824 байт свободно
+
+C:\STUDN>cd abc
+
+C:\STUDN\ABC>cd def
+
+C:\STUDN\ABC\DEF>del copyfile.doc
+
+C:\STUDN\ABC\DEF>dir/s
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: CCAF-94C8
+
+ Содержимое папки C:\STUDN\ABC\DEF
+
+17.12.2020  19:25    <DIR>          .
+17.12.2020  19:25    <DIR>          ..
+17.12.2020  19:02                40 text1.txt
+               1 файлов             40 байт
+
+     Всего файлов:
+               1 файлов             40 байт
+               2 папок  26 981 408 768 байт свободно
+
+C:\STUDN\ABC\DEF>cd\studn
+
+C:\STUDN>md cde
+
+C:\STUDN>cd cde
+
+C:\STUDN\cde>md EFG
+
+C:\STUDN\cde>cd\studn
+
+C:\STUDN>cd text
+
+C:\STUDN\TEXT>copy c:\studn\text*.* c:\studn\cde\efg
+c:\studn\text*.*
+Не удается найти указанный файл.
+Скопировано файлов:         0.
+
+C:\STUDN\TEXT>copy c:\studn\text*.* c:\studn\efg
+c:\studn\text*.*
+Не удается найти указанный файл.
+Скопировано файлов:         0.
+
+C:\STUDN\TEXT>copy c:\studn\text\*.* c:\studn\cde\efg
+c:\studn\text\text1.txt
+c:\studn\text\text2.doc
+c:\studn\text\text3.inf
+Скопировано файлов:         3.
+
+C:\STUDN\TEXT>cd\studn
+
+C:\STUDN>cd cde
+
+C:\STUDN\cde>cd efg
+
+C:\STUDN\cde\EFG>dir/s
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: CCAF-94C8
+
+ Содержимое папки C:\STUDN\cde\EFG
+
+17.12.2020  19:28    <DIR>          .
+17.12.2020  19:28    <DIR>          ..
+17.12.2020  19:02                40 text1.txt
+17.12.2020  19:05                29 text2.doc
+17.12.2020  19:06                30 text3.inf
+               3 файлов             99 байт
+
+     Всего файлов:
+               3 файлов             99 байт
+               2 папок  26 981 277 696 байт свободно
+
+C:\STUDN\cde\EFG>ren *.* *.old
+
+C:\STUDN\cde\EFG>copy text1.old+text2.old+text3.old all.txt
+text1.old
+text2.old
+text3.old
+Скопировано файлов:         1.
+
+C:\STUDN\cde\EFG>del *.old
+
+C:\STUDN\cde\EFG>dir/s
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: CCAF-94C8
+
+ Содержимое папки C:\STUDN\cde\EFG
+
+17.12.2020  19:30    <DIR>          .
+17.12.2020  19:30    <DIR>          ..
+17.12.2020  19:29               100 all.txt
+               1 файлов            100 байт
+
+     Всего файлов:
+               1 файлов            100 байт
+               2 папок  26 981 277 696 байт свободно
+
+C:\STUDN\cde\EFG>cd\studn
+
+C:\STUDN>cd text
+
+C:\STUDN\TEXT>del *.*
+C:\STUDN\TEXT\*.*, вы уверены [Y(да)/N(нет)]? Y
+
+C:\STUDN\TEXT>cd\studn
+
+C:\STUDN>rd text
+
+C:\STUDN>dir/s
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: CCAF-94C8
+
+ Содержимое папки C:\STUDN
+
+17.12.2020  19:31    <DIR>          .
+17.12.2020  19:31    <DIR>          ..
+17.12.2020  18:59    <DIR>          ABC
+17.12.2020  19:26    <DIR>          cde
+17.12.2020  19:10                26 fio.txt
+17.12.2020  19:11                25 inf.txt
+17.12.2020  19:13                52 my.txt
+               3 файлов            103 байт
+
+ Содержимое папки C:\STUDN\ABC
+
+17.12.2020  18:59    <DIR>          .
+17.12.2020  18:59    <DIR>          ..
+17.12.2020  19:25    <DIR>          DEF
+17.12.2020  19:08    <DIR>          KLMNO
+               0 файлов              0 байт
+
+ Содержимое папки C:\STUDN\ABC\DEF
+
+17.12.2020  19:25    <DIR>          .
+17.12.2020  19:25    <DIR>          ..
+17.12.2020  19:02                40 text1.txt
+               1 файлов             40 байт
+
+ Содержимое папки C:\STUDN\ABC\KLMNO
+
+17.12.2020  19:08    <DIR>          .
+17.12.2020  19:08    <DIR>          ..
+17.12.2020  19:09                28 fio.txt
+17.12.2020  19:08               112 fyle.my
+               2 файлов            140 байт
+
+ Содержимое папки C:\STUDN\cde
+
+17.12.2020  19:26    <DIR>          .
+17.12.2020  19:26    <DIR>          ..
+17.12.2020  19:30    <DIR>          EFG
+               0 файлов              0 байт
+
+ Содержимое папки C:\STUDN\cde\EFG
+
+17.12.2020  19:30    <DIR>          .
+17.12.2020  19:30    <DIR>          ..
+17.12.2020  19:29               100 all.txt
+               1 файлов            100 байт
+
+     Всего файлов:
+               7 файлов            383 байт
+              17 папок  26 981 277 696 байт свободно
+
+C:\STUDN>
+
+
+
+
+
